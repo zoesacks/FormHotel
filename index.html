@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">Luxury Hotel</h1>
+    <p id="description">Please complete the information to check availability</p>
+
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+
+        <fieldset>
+            <label for="name" id="name-label">
+                Name <input type="text" name="name" id="name" placeholder="Enter your name">
+            </label>
+            <label for="email" id="email-label">
+                Email <input type="email" name="email" id="email" placeholder="Enter your Email">
+            </label>
+            <label for="age" id="number-label">
+                Age <input type="number" name="age" id="age" min="18" max="99" placeholder="Enter your age">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <h2>How Many People Are?</h2>
+            <label for="one">
+                <input type="radio" name="manypeople" id="one" class="inline"> Only Me
+            </label>
+            <label for="two">
+                <input type="radio" name="manypeople" id="two" class="inline"> Two People
+            </label>
+            <label for="three">
+                <input type="radio" name="manypeople" id="three" class="inline"> Three People
+            </label>
+            <label for="four">
+                <input type="radio" name="manypeople" id="four" class="inline"> Four People
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="dropdown" id="dropdown-label">
+                What Room Do You Want?
+                <select name="dropdown" id="dropdown">
+                    <option value="">Select Your Room</option>
+                    <option value="1">Single Room</option>
+                    <option value="2">Double Room</option>
+                    <option value="3">Deluxe Room</option>
+                    <option value="4">Suite</option>
+                    <option value="5">Presidential Suites</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <h2>What Extra Services Do You Want?</h2>
+            <label for="breackfast">
+                <input type="checkbox" name="breackfast" id="breackfast" class="inline"> Breackfast
+            </label>
+            <label for="lunch">
+                <input type="checkbox" name="lunch" id="lunch" class="inline"> Lunch
+            </label>
+            <label for="dinner">
+                <input type="checkbox" name="dinner" id="dinner" class="inline"> Dinner
+            </label>
+            <label for="parking">
+                <input type="checkbox" name="parking" id="parking" class="inline"> Parking
+            </label>
+            <label for="spa">
+                <input type="checkbox" name="spa" id="select" class="inline"> Spa
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="request" id="request-label">
+                Do You Want To Add A Request For Your Lodging? <textarea name="request" id="request" cols="30" rows="3"
+                    placeholder="Enter Your Request..."></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+</body>
+
+</html>

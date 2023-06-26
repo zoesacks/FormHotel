@@ -1,0 +1,80 @@
+*{
+    font-family: 'Varela Round', sans-serif;    
+}
+
+body{
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-size: 42px;
+    margin-bottom: 0%;
+}
+
+h1, p{
+    color: #0c3454;
+    text-align: center
+}
+
+fieldset{
+    border: 0;
+}
+
+textarea{
+    resize:none; 
+}
+
+label{
+    display: block;
+}
+
+label, h2{
+    font-size: 16px;
+    margin: 0;
+    color: #31363a;
+    font-weight: normal; 
+}
+
+input, textarea, select{
+    width: 100%;
+    margin: 5px 0;
+    background-color: #31363a;
+    border: 1px solid #31363a;
+    color: rgb(224, 236, 245);
+    border-radius: 0.25rem;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 30%;
+    margin: 1em auto;
+    height: 2.5em;
+    background-color: #0c3454;
+    border: 1px solid #0c3454;;
+    min-width: 100px;
+}
+
+#name, #email{
+    margin-bottom: 15px;    
+}
+
+#survey-form{
+    width: 70vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: rgb(224, 236, 245);
+    padding: 20px;
+    border-radius: 0.25rem;
+}
+
+.inline{
+    width: unset;
+    vertical-align: baseline;
+}
+
+::placeholder{
+    color: rgb(224, 236, 245);
+}
